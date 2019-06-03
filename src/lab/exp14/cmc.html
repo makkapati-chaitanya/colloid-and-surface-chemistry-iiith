@@ -9,16 +9,9 @@
 		#flashContent { width:100%; height:100%; }
 		</style>
 <!-- Google Analytics Code starts here -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42255654-1', 'virtual-labs.ac.in');
-  ga('send', 'pageview');
-
-</script>
+<script>(function (i, s, o, g, r, a, m) {i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {(i[r].q = i[r].q || []).push(arguments)}, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+   ga('create', 'UA-42255654-1', 'virtual-labs.ac.in');
+   ga('send', 'pageview');</script>
 <!-- Google Analytics Code ends here -->
 	</head>
 	<body>
@@ -26,39 +19,33 @@
 		<center>
 		<h3 align:"center">Critical Micelle Concentration</h3>
 		<div id="flashContent">
-			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1000" height="550" id="cmc" align="middle">
-				<param name="movie" value="cmc.swf" />
-				<param name="quality" value="high" />
-				<param name="bgcolor" value="#ffffff" />
-				<param name="play" value="true" />
-				<param name="loop" value="true" />
-				<param name="wmode" value="window" />
-				<param name="scale" value="showall" />
-				<param name="menu" value="true" />
-				<param name="devicefont" value="false" />
-				<param name="salign" value="" />
-				<param name="allowScriptAccess" value="sameDomain" />
-				<!--[if !IE]>-->
-				<object type="application/x-shockwave-flash" data="cmc.swf" width="1000" height="550">
-					<param name="movie" value="cmc.swf" />
-					<param name="quality" value="high" />
-					<param name="bgcolor" value="#ffffff" />
-					<param name="play" value="true" />
-					<param name="loop" value="true" />
-					<param name="wmode" value="window" />
-					<param name="scale" value="showall" />
-					<param name="menu" value="true" />
-					<param name="devicefont" value="false" />
-					<param name="salign" value="" />
-					<param name="allowScriptAccess" value="sameDomain" />
-				<!--<![endif]-->
-					<a href="http://www.adobe.com/go/getflash">
-						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
-					</a>
-				<!--[if !IE]>-->
-				</object>
-				<!--<![endif]-->
-			</object>
+			<video width="320" height="400">
+                 <source src="cmc.mp4" type="video/mp4" />
+                 <source src="cmc.webm" type="video/webm" />
+                 <source src="cmc.ogv" type="video/ogg" />
+
+<!-- Flash fallback -->
+                <object type="application/x-shockwave-flash" data="cmc.mp4" width="320" height="400">
+                	 <param name="movie" value="flash-player.swf?videoUrl=cmc.mp4" />
+                     <param name="quality" value="high" />
+					 <param name="bgcolor" value="#ffffff" />
+					 <param name="play" value="true" />
+					 <param name="loop" value="true" />
+					 <param name="wmode" value="window" />
+					 <param name="scale" value="showall" />
+					 <param name="menu" value="true" />
+					 <param name="devicefont" value="false" />
+					 <param name="salign" value="" />
+                     <param name="allowfullscreen" value="true" />
+                     <param name="wmode" value="transparent" />
+                     <param name="flashvars" value="controlbar=over&image=placeholder.jpg&file=flash-player.swf?videoUrl=cmc.mp4" />
+                     <a href="http://csc-iiith.vlabs.ac.in/exp14/cmc.html">Ogg format</a>
+                </object>
+
+                  
+  <!-- Text Fallback -->
+                <p>No video support found. Please download the video below, or upgrade your browser: https://browsehappy.com/</p>
+            </video>       		
 		</div>
 		<input type="button" value="Reset Experiment" onClick="window.location.reload()">
 		</center>
